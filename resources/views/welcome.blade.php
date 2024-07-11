@@ -10,6 +10,14 @@
 <body>
     
     <h1 class="text-primary my-4">Movies</h1>
+    {{-- @dd($movies) --}}
+    <div class="container">
+        <ul class="list-group">
+            @foreach ($movies as $movie)
+                <li class="list-group-item">{{$movie['title']}}</li>
+            @endforeach
+        </ul>
+    </div>
 
 
     
